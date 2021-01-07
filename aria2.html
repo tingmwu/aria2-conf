@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>windows下的aria2配置</title>
+        <style>
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="windows下的aria2配置">windows下的aria2配置</h1>
+<h1 id="1-下载aria2软件包">1 下载aria2软件包</h1>
+<p><a href="https://github.com/aria2/aria2/releases/tag/release-1.35.0">下载链接</a></p>
+<h1 id="2-下载aria2配置文件包">2 下载aria2配置文件包</h1>
+<p><a href="https://github.com/P3TERX/aria2.conf">下载链接</a></p>
+<h1 id="3-修改配置文件">3 修改配置文件</h1>
+<pre><code><code><div>1.windows下打开 c:/users/%username% 文件夹(%username%为当前用户名)
+2.新建.aria2文件夹
+3.将aria2配置包中的aria2.conf复制到.aria2文件夹
+4. 打开aria2.conf,将/root/.aria2 用c:/users/%username%/.aria2替换
+5. 其它配置可自行修改。
+</div></code></code></pre>
+<h1 id="aria2常用命令">aria2常用命令</h1>
+<blockquote>
+<p>--header &quot;cookie: &quot;	添加cookie或者其它头</p>
+</blockquote>
+<blockquote>
+<p>--all-proxr=127.0.0.1:7890	设置代理（也可用https-proxy, http-proxy可在帮助文档查看）</p>
+</blockquote>
+<blockquote>
+<p>-d 设置下载目录</p>
+</blockquote>
+<blockquote>
+<p>-S 查看种子信息</p>
+</blockquote>
+<blockquote>
+<p>--select-file=1-2,3  选择下载种子部分文件</p>
+</blockquote>
+
+    </body>
+    </html>
